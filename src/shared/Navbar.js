@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
-      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <div class="flex items-center">
             <a
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                Company
+                Lonefy
               </span>
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
