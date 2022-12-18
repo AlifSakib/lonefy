@@ -12,7 +12,7 @@ const Loan = () => {
           <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
               <label class="text-gray-700 dark:text-gray-200" for="username">
-                Username
+                Type of Loan
               </label>
               <input
                 id="username"
@@ -26,7 +26,7 @@ const Loan = () => {
                 class="text-gray-700 dark:text-gray-200"
                 for="emailAddress"
               >
-                Email Address
+                Loan Amount
               </label>
               <input
                 id="emailAddress"
@@ -37,7 +37,7 @@ const Loan = () => {
 
             <div>
               <label class="text-gray-700 dark:text-gray-200" for="password">
-                Password
+                Interest Rate
               </label>
               <input
                 id="password"
@@ -51,7 +51,7 @@ const Loan = () => {
                 class="text-gray-700 dark:text-gray-200"
                 for="passwordConfirmation"
               >
-                Password Confirmation
+                Loan Tenure (Month)
               </label>
               <input
                 id="passwordConfirmation"

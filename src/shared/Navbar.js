@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthProvider";
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLogout = () => {
+    logout();
+  };
   return (
     <div>
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
@@ -77,26 +83,39 @@ const Navbar = () => {
             </ul>
           </div>
           <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                aria-label="Sign in"
-                title="Sign in"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-              >
-                Sign in
-              </a>
-            </li>
-            <li>
-              <Link
-                to="/register"
+            {user?.uid ? (
+              <button
+                onClick={handleLogout}
                 class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
-                Sign up
-              </Link>
-            </li>
+                Logout
+              </button>
+            ) : (
+              <>
+                <li>
+                  <Link
+                    to="/login"
+                    aria-label="Sign in"
+                    title="Sign in"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                  >
+                    Sign in
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/register"
+                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    aria-label="Sign up"
+                    title="Sign up"
+                  >
+                    Sign up
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
           <div class="lg:hidden">
             <button
