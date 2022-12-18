@@ -18,22 +18,22 @@ const Register = () => {
   };
   return (
     <div>
-      <section class="bg-white dark:bg-gray-900">
-        <div class="container flex items-center justify-center min-h-screen px-6 mx-auto flex-col">
-          <form onSubmit={handleSignUp} class="w-full max-w-md">
-            <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white">
+      <section className="bg-white dark:bg-gray-900">
+        <div className="container flex items-center justify-center min-h-screen px-6 mx-auto flex-col">
+          <form onSubmit={handleSignUp} className="w-full max-w-md">
+            <h1 className="text-3xl font-semibold text-gray-800 capitalize dark:text-white">
               sign Up
             </h1>
 
-            <div class="relative flex items-center mt-8">
-              <span class="absolute">
+            <div className="relative flex items-center mt-8">
+              <span className="absolute">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
+                  className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
                 >
                   <path
                     strokeLinecap="round"
@@ -46,15 +46,15 @@ const Register = () => {
               <input
                 type="text"
                 name="name"
-                class="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Your Name"
               />
             </div>
-            <div class="relative flex items-center mt-4">
-              <span class="absolute">
+            <div className="relative flex items-center mt-4">
+              <span className="absolute">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
+                  className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -71,16 +71,16 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                class="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Email address"
               />
             </div>
 
-            <div class="relative flex items-center mt-4">
-              <span class="absolute">
+            <div className="relative flex items-center mt-4">
+              <span className="absolute">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
+                  className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -97,23 +97,23 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                class="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Password"
               />
             </div>
 
-            <div class="mt-6">
+            <div className="mt-6">
               <button
                 type="submit"
-                class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
               >
                 Sign Up
               </button>
 
-              <div class="mt-6 text-center ">
+              <div className="mt-6 text-center ">
                 <Link
                   to="/login"
-                  class="text-sm text-blue-500 hover:underline dark:text-blue-400"
+                  className="text-sm text-blue-500 hover:underline dark:text-blue-400"
                 >
                   Don’t have an account yet? Sign In
                 </Link>
